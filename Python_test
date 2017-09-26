@@ -1,0 +1,74 @@
+
+#Square_program_Dictionary
+##list1=[]
+##list2=[]
+##for i in range(1,10):
+##    list2.append(i)
+##    i=i*i
+##    list1.append(i)
+##dict1={}
+##dict1=dict(zip(list2,list1))
+##print dict1
+
+#############################################################################
+
+#List and Tuple
+##str1=raw_input()
+##
+##print list(str1.split())
+##print tuple(str1.split())
+
+#############################################################################
+
+##Class and Methods
+##class str1:
+##    def __init__(self):
+##        self.s=""
+##
+##    def getstring(self):
+##        self.s=raw_input()
+##
+##    def printstring(self):
+##        print self.s.upper()
+##
+##s=str1()
+##s.getstring()
+##s.printstring()
+############################################################################
+##Sort list
+##str1="welcome to jungle cat dog"
+##str2=[]
+##for i in range(0,len(str1)):
+##    str2=str1.split()
+##    str2.sort()
+##print str2
+##
+#########################################################################
+##str1="welcome to analog devices"
+##str2=str1.upper()
+##print str2
+#########################################################################
+##str1= "hello world hello analog devices devices analog"
+##str2=[]
+##list2=[]
+##str3=" "
+##for i in range(0,len(str1)):
+##    str2=str1.split()
+##
+##set1=set(str2)
+##list2=list(set1)
+##list2.sort()
+##for i in range(0,len(list2)):
+##   str3=(" ".join(list2))
+##print str3
+
+########################################################################
+str2=str1.split()
+str2=(map(int,x) for x in str2)
+print str2
+for i in range(0,len(str2)):
+    num=int(i,2)
+    if(num%5):
+        print i
+
+
