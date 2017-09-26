@@ -69,6 +69,85 @@ for i in range(0,len(str2)):
      num=int(str2[i],2)
      if(num%5==0):
         print bin(num).lstrip('0b')
+#####################################################################
+##Counting no of letters and digits in given string
+##str1=str(raw_input())
+##count1=0
+##count2=0
+##for i in range(0,len(str1)):
+##   
+##    if(str1[i].isdigit()):
+##         count1=count1+1
+##    elif(str1[i].isalpha()):     
+##         count2=count2+1
+##    else:
+##        pass
+##print "No of digits:",count1
+##print "No of letters:",(count2-count1)
 
+    
+###########################################################################
+##counting no of Uppercase letters
+##str1=str(raw_input())
+##
+##count1=0
+##count2=0
+##for i in range(0,len(str1)):
+##    if(str1[i].isupper()):
+##        count1=count1+1
+##    elif(str1[i].islower()):
+##        count2=count2+1
+##        
+##print "Upper case Letters:",count1
+##print "Lower case Letters:",count2
+##########################################################################
+## sumation of a+aa+aaa+aaaa
+##num=input()
+##total=0
+##str1=[1,11,111,1111]
+##for i in range(4):
+##    total=total+str1[i]*num
+##print total
+###########################################################################
+## print square if index is odd
+##num=[ x for x in range(10)]
+##sq =[x*x for x in range(10) if (x%2==1) ]
+##print sq
+###########################################################################
+## Banking Transaction 
+##D=0
+##w=0
+##R=0
+##total_amount=0
+##total_with_amount=0
+##print "Enter deposit amount:"
+##D=raw_input()
+##list1=list(D.split())
+##for i in range(0,len(list1)):
+##    total_amount=total_amount+int(list1[i])
+##print "Total Deposit Amount:",total_amount
+##
+##print "Enter a withdrawl amount:"
+##W=raw_input()
+##list2=list(W.split())
+##for i in range(0,len(list2)):
+##    total_with_amount=total_with_amount+int(list2[i])
+##print "Total Withdrawl Amount:",total_with_amount
+##
+##print "Remaining Balance:",(total_amount-total_with_amount)
+########################################################################
+##Check password strength
+print "Enter a password: \n password should contain at least [0-9] [a-z] [A-Z][$#@] length(6-12)"
+passw=raw_input()
+list1=passw.split()
+for x in range(0,len(list1)):
+    passw=str(list1[x])
+    len1= len(passw)
+    print len1
+    if(6 <= len1 <= 13):
+        if(passw.isalpha()and '$' in passw or '#'in passw or '@' in passw):
+            print "valid and strong Password:",passw
+    else:
+        pass
 
 
