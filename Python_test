@@ -137,16 +137,14 @@ for i in range(0,len(str2)):
 ##print "Remaining Balance:",(total_amount-total_with_amount)
 ########################################################################
 ##Check password strength
+import re
 print "Enter a password: \n password should contain at least [0-9] [a-z] [A-Z][$#@] length(6-12)"
 passw=raw_input()
 list1=passw.split()
 for x in range(0,len(list1)):
     passw=str(list1[x])
-    len1= len(passw)
-    print len1
-    if(6 <= len1 <= 13):
-        if(passw.isalpha()and '$' in passw or '#'in passw or '@' in passw):
-            print "valid and strong Password:",passw
+    if re.match(r'[A-Za-z0-9@#$%^&+=]{6,12}', passw):
+        print "Valid Passowrd"
     else:
         pass
 
