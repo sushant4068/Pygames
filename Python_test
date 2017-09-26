@@ -63,12 +63,12 @@
 ##print str3
 
 ########################################################################
+str1="1110 1100 1111 1010 111110 111011"
 str2=str1.split()
-str2=(map(int,x) for x in str2)
-print str2
 for i in range(0,len(str2)):
-    num=int(i,2)
-    if(num%5):
-        print i
+     num=int(str2[i],2)
+     if(num%5==0):
+        print bin(num).lstrip('0b')
+
 
 
