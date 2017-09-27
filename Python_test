@@ -74,16 +74,16 @@ for i in range(0,len(str2)):
 ##str1=str(raw_input())
 ##count1=0
 ##count2=0
-##for i in range(0,len(str1)):
+##for i in str1:
 ##   
-##    if(str1[i].isdigit()):
+##    if(i.isdigit()):
 ##         count1=count1+1
-##    elif(str1[i].isalpha()):     
+##    elif(i.isalpha()):     
 ##         count2=count2+1
 ##    else:
 ##        pass
 ##print "No of digits:",count1
-##print "No of letters:",(count2-count1)
+##print "No of letters:",count2
 
     
 ###########################################################################
