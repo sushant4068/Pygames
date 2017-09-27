@@ -142,5 +142,22 @@ for x in range(0,len(list1)):
         print "Valid Passowrd"
     else:
         pass
+######################################################################
+###MOST OF IMP PGM#####
+str1=raw_input()
+list1=str1.split()
+count=0
+count1=[]
+
+for i in range(0,len(list1)):
+    count=list1.count(list1[i])
+    count1.append(count)
+
+dictionary = dict(zip(list1, count1))
+print dictionary
+
+for key in sorted(dictionary.iterkeys()):
+    print "%s: %s" % (key, dictionary[key])
+############################################################
 
 
