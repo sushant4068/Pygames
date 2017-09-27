@@ -115,26 +115,21 @@ for i in range(0,len(str2)):
 ##print sq
 ###########################################################################
 ## Banking Transaction 
-##D=0
-##w=0
-##R=0
-##total_amount=0
-##total_with_amount=0
-##print "Enter deposit amount:"
-##D=raw_input()
-##list1=list(D.split())
-##for i in range(0,len(list1)):
-##    total_amount=total_amount+int(list1[i])
-##print "Total Deposit Amount:",total_amount
-##
-##print "Enter a withdrawl amount:"
-##W=raw_input()
-##list2=list(W.split())
-##for i in range(0,len(list2)):
-##    total_with_amount=total_with_amount+int(list2[i])
-##print "Total Withdrawl Amount:",total_with_amount
-##
-##print "Remaining Balance:",(total_amount-total_with_amount)
+list1=[]
+amount = 0
+while(True):
+    value = raw_input()
+    list1 = value.split(" ")
+    print list1
+    for i in list1:
+        if(list1[0]=='D'):
+            amount= int(list1[1])+amount
+        elif(list1[0] =='W'):
+            amount=amount-int(list1[1])
+        else:
+            pass
+    print amount 
+
 ########################################################################
 ##Check password strength
 import re
