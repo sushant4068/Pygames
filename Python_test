@@ -159,5 +159,230 @@ print dictionary
 for key in sorted(dictionary.iterkeys()):
     print "%s: %s" % (key, dictionary[key])
 ############################################################
+##Write a Python function to convert a given string to all uppercase
+##if it contains at least 2 uppercase characters in the first 4 characters
+##def string_upper(str1):
+##    str2=str1[:2]
+##      str3=str1[3:5]
+##    if(str2.isupper() or str3.isupper()):
+##        print(str1.upper())
+##string_upper("SUshant")
+
+##Write a Python program to check if a string contains all letters of the alphabet
+##str1=raw_input()
+##str2=str1.lower()
+##str1=str2.replace(" ","")
+##print(str1)
+##set1=set(str1)
+##print(set1)
+##if (len(set1) == 26):
+##    print("Given statement contains all the alphabates")
+##else:
+##    print("Given statement NOT contains all the alphabates")
+##    
+
+##Write a Python program to sort a string lexicographically    
+##s='aAaBbcCdE'
+##t=sorted(s, lambda x,y: cmp(x.lower(), y.lower()) or cmp(x,y))
+##print(t)
+
+##Write a Python program to create a Caesar encryption
+##print("Caesar encryption")
+##str1 = raw_input("Enter a string:")
+##shift = input("type how many shifts:")
+##s=""
+##for i in str1:
+##    if i.isalpha():
+##        a = ord(i) + shift  # ord('a')=97 chr(97)=a
+##        s += chr(a)
+##    else:
+##        s+=1
+##print(s)
+
+
+
+##Write a Python program to count the number of characters (character frequency) in a string
+##str1=raw_input()
+##list1=list(str1)
+##count1=[]
+##dict1={}
+##for i in str1:
+##    count1.append(str1.count(i))
+##dict1=dict(zip(list1,count1))
+##print(dict1)
+
+##Write a Python program to calculate the length of a string
+##str1=raw_input()
+##count1=0
+##for char in str1:
+##    count1=count1+1
+##print(count1)
+
+## Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string.
+## If the string length is less than 2, return instead of the empty string
+##str1=raw_input()
+##if len(str1)>2:
+##    print (str1[0:2])+(str1[-2:])
+##else:
+##    print "Empty String"
+
+##Write a Python program to get a string from a given string
+##where all occurrences of its first char have been changed to '$',
+##except the first char itself
+##str1=raw_input()
+##for i in str1:
+##    char =str1[0]
+##    str1=str1.replace(char,"$")
+##    str1=char+str1[1:]
+##print(str1)
+        
+## Write a Python program to get a single string from two given strings,
+## separated by a space and swap the first two characters of each string
+##def string_exchange(a,b):
+##    new_1=b[:2]+a[2:]
+##    new_2=a[:2]+b[2:]
+##
+##    print(new_1)
+##    print(new_2)
+##string_exchange("ABC","XYZ")
+
+##Write a Python program to add 'ing' at the end of a given string (length should be at least 3).
+##If the given string already ends with 'ing' then add 'ly' instead
+##str1=raw_input()
+##if(len(str1)>3):
+##    if(str1.endswith('ing')):
+##       str1=str1.replace('ing','ly')
+##    else:
+##        str1=str1+'ing'
+##
+##print(str1)
+
+##Use of filter,map,reduce function
+##num=[]
+##for i in range(1,101):
+##    num.append(i)
+##print "Elements in list:"
+##print(num)
+##
+##f1=filter(lambda x:x%2==0 ,num)
+##print "\n Even numbers:"
+##print(f1)
+##
+##f2=map(lambda x:x*x ,f1)
+##print "\n Squares of even numbers:"
+##print(f2)
+##
+##f3=reduce(lambda x,y:x+y,f2)
+##print "\nSummation of all elements:"
+##print(f3)
+
+## Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if 'bad' follows the 'poor',
+## replace the whole 'not'...'poor' substring with 'good
+##str1=" The lyrics is not that poor"
+##res1=str1.find("not")
+##res2=str1.find("poor")
+##print(res1,res2)
+##if(res2>rasdsf es1):
+##    str1=str1.replace(str1[res1:res2+4],"good")
+##    print(str1)
+##    
+
+## Write a Python function that takes a list of words
+## and returns the length of the longest one
+##list1=raw_input()
+##list1=list1.split()
+##res2=[]
+##for i in list1:
+##    res1=len(i)
+##    res2.append(res1)
+##print(res2)
+##print(max(res2))
+
+## Write a Python program to remove the nth
+## index character from a nonempty string
+##str1=raw_input() //For string as a input use raw_input()
+##list1=list(str1)
+##print "Enter a index:"
+##index=input() //To take input as a number use only input()
+##letter=list1[index]
+##print(letter)
+##list1.remove(letter)
+##print(''.join(list1))
+
+##Write a Python program to change a given string to a new string where the first
+##and last chars have been exchanged
+##print "Enter a string:"
+##str1=raw_input()
+##list1=list(str1)
+##last=list1.pop()
+##first=list1[0]
+##list1[0]=last
+##num=str1.find(last)
+##list1.insert(num,first)
+##print "After exchange first and last character"
+##print(''.join(list1))
+
+##Write a Python program to count the occurrences of each word
+##in a given sentence
+##str1=raw_input()
+##list1=str1.split()
+##count1=[]
+##a=0
+##for i in list1:
+##    a=list1.count(i)
+##    count1.append(a)
+##print(count1)
+
+##str1=raw_input()
+##str2=str1.upper()
+##str3=str1.lower()
+##print(str2,str3)
+
+##Write a Python program that accepts a comma separated sequence of words as input and
+##prints the unique words in sorted form (alphanumerically)
+##str1=raw_input()
+##list1=str1.split()
+##count1=[]
+##for i in list1:
+##    a=list1.count(i)
+##    if (a==1):
+##        count1.append(i)
+##count1.sort()
+
+## Write a Python function to insert a string in the middle of a string
+##def string(str1,str2):
+##    list1=list(str1)
+##    num=len(list1)/2
+##    output=str1[:num]+str2+str1[num:]
+##    print(output)
+##
+##string("sushant","todkar")
+
+##def insert_end(str1):
+##    print(str1[-2:]*2)
+##    print(str1[:3])
+##insert_end("Python")
+
+##Write a Python function to reverses a string if it's length is a multiple of 4
+##str1=raw_input()
+##num=len(str1)
+##if(num%4==0):
+##    print(str1[::-1])
+
+##str1 = 'https://www.w3resource.com/python-exercises'
+##print(str1.rsplit('/', 1))
+##print(str1.rsplit('-', 1))
+
+##to count repeated characters in a string
+##str1=raw_input()
+##list1=list(str1)
+##count1=[]
+##for i in str1:
+##    a=str1.count(i)
+##    count1.append(a)
+##
+##dict1=dict(zip(list1,count1))
+##print(dict1)
+
 
 
